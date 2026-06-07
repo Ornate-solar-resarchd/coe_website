@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Centre of Excellence — Power Electronics &amp; Clean Energy Systems | Ornate Solar</title>
+<meta name="description" content="India's indigenous power conversion stack. A reusable, firmware-defined control platform for solar inverters, BESS, EV charging, microgrids and solid-state transformers — designed, built and validated in India by the Ornate Solar Centre of Excellence." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- scroll progress -->
+<div class="scrollbar" id="scrollbar" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28"><path d="M17 2 L6 18 h7 l-2 12 L26 12 h-8 z" fill="currentColor"/></svg>
+      </span>
+      <span class="brand__text">
+        <strong>Centre of Excellence</strong>
+        <em>Power Electronics &amp; Clean Energy</em>
+      </span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#platform">Platform</a>
+      <a href="#lab">Lab</a>
+      <a href="#products">Products</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#team">Team</a>
+      <a href="#contact" class="nav__cta">Engage with us</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <svg class="hero__circuit" aria-hidden="true" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice">
+    <path d="M-20 140 H300 V300 H560" /><path d="M1460 90 H1180 V250 H980 V420" />
+    <path d="M-20 540 H220 V400 H460" /><path d="M1460 600 H1240 V470 H1040" />
+    <circle class="spark" r="3"><animateMotion dur="6s" repeatCount="indefinite" path="M-20 140 H300 V300 H560"/></circle>
+    <circle class="spark spark--teal" r="3"><animateMotion dur="7s" repeatCount="indefinite" path="M1460 90 H1180 V250 H980 V420"/></circle>
+    <circle class="spark" r="3"><animateMotion dur="8s" repeatCount="indefinite" path="M-20 540 H220 V400 H460"/></circle>
+    <circle class="spark spark--teal" r="3"><animateMotion dur="6.5s" repeatCount="indefinite" path="M1460 600 H1240 V470 H1040"/></circle>
+  </svg>
+  <div class="container hero__layout">
+    <div class="hero__content">
+      <div class="eyebrow reveal">
+        <span class="dot"></span> Centre of Excellence · DSIR-recognised in-house R&amp;D lab
+      </div>
+      <h1 class="hero__title reveal">
+        India's centre for
+        <span class="grad">indigenous power electronics.</span>
+      </h1>
+      <p class="hero__lede reveal">
+        We design, build and validate the control technology inside every grid-interactive power system —
+        DC–DC, AC–DC and DC–AC conversion. From PCB to firmware to field-proven product, engineered
+        entirely in-house. One platform. Five national-priority product classes.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#lab" class="btn btn--primary">Inside the lab</a>
+        <a href="#platform" class="btn btn--ghost">The platform</a>
+      </div>
+
+      <div class="hero__stats reveal">
+        <div class="stat"><span class="stat__num" data-count="3">3</span><span class="stat__label">years of embedded R&amp;D</span></div>
+        <div class="stat"><span class="stat__num" data-count="12">12</span><span class="stat__label">engineers · 3 PhDs</span></div>
+        <div class="stat"><span class="stat__num" data-count="5">5</span><span class="stat__label">product classes</span></div>
+        <div class="stat"><span class="stat__num">TRL&nbsp;7</span><span class="stat__label">first product</span></div>
+      </div>
+    </div>
+
+    <div class="hero__visual reveal">
+      <figure class="hero__card hero__card--main">
+        <img src="assets/lab/powerboard-hero.jpg" alt="Indigenous integrated power board for the 3 kW grid-tied inverter" loading="eager" />
+        <figcaption><span class="hero__chip">In-house power board · 3 kW GTI</span></figcaption>
+      </figure>
+      <figure class="hero__card hero__card--float">
+        <img src="assets/lab/control-card.jpg" alt="Custom STM32-based control card, designed in-house" loading="eager" />
+        <figcaption><span class="hero__chip hero__chip--teal">Custom STM32 control card</span></figcaption>
+      </figure>
+      <div class="hero__badge"><strong>0.993</strong><span>power factor, measured</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<section class="trust">
+  <div class="container trust__inner">
+    <span class="trust__label">Recognised &amp; validated by</span>
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>DSIR · Ministry of Science &amp; Technology</span>
+        <span>Tested at IIT Delhi</span>
+        <span>Submitted to MeitY, Govt. of India</span>
+        <span>BIS IS 16221 type-testing</span>
+        <span>Partners: IIT-BHU · FITT · MAIT</span>
+        <span>DSIR · Ministry of Science &amp; Technology</span>
+        <span>Tested at IIT Delhi</span>
+        <span>Submitted to MeitY, Govt. of India</span>
+        <span>BIS IS 16221 type-testing</span>
+        <span>Partners: IIT-BHU · FITT · MAIT</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CAPABILITIES ===== -->
+<section class="section" id="capabilities">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">What we engineer</span>
+      <h2>End-to-end power electronics — silicon to grid.</h2>
+      <p class="section__intro">The Centre of Excellence carries a complete capability stack: from schematic and PCB design, through power conversion and control firmware, to thermal, test and validation. These are the domains we work across every day.</p>
+    </div>
+
+    <div class="caps">
+      <article class="cap reveal">
+        <span class="cap__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="20" rx="3" stroke="currentColor" stroke-width="2"/><path d="M14 14v-5M24 14v-5M34 14v-5M14 34v5M24 34v5M34 34v5" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/></svg>
+        </span>
+        <h3>Power electronics</h3>
+        <p>Topology design, gate drivers, magnetics, sensing and protection — the analog heart of every converter.</p>
+      </article>
+      <article class="cap reveal">
+        <span class="cap__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M8 30c6 0 6-12 12-12s6 12 12 12 6-12 8-12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6 38h36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M30 10l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>Power conversion systems</h3>
+        <p>DC–DC, AC–DC and DC–AC stages with high-speed MPPT, PFC and grid-forming control built in firmware.</p>
+      </article>
+      <article class="cap reveal">
+        <span class="cap__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="7" y="10" width="34" height="28" rx="3" stroke="currentColor" stroke-width="2"/><path d="M24 10v28" stroke="currentColor" stroke-width="2"/><path d="M11 18l8 6-8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M29 24h8M33 20v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <h3>AC / DC converters</h3>
+        <p>Bi-directional inverters and rectifiers — single- and three-phase, two-level to multi-level NPC/ANPC.</p>
+      </article>
+      <article class="cap reveal">
+        <span class="cap__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M10 30h22l4-8h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15" cy="34" r="4" stroke="currentColor" stroke-width="2"/><circle cx="31" cy="34" r="4" stroke="currentColor" stroke-width="2"/><path d="M10 30V16h12l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12l-3 6h6l-3 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>EV charging &amp; drives</h3>
+        <p>DC fast-charging front-ends, isolated DC/DC output stages and motor-control firmware for e-mobility.</p>
+      </article>
+      <article class="cap reveal">
+        <span class="cap__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="16" width="32" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M16 16v-4h16v4M16 32v4h16v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 20l-3 4h6l-3 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>Power supplies (SMPS)</h3>
+        <p>Dual-input isolated SMPS, flyback and boost stages — written from scratch with full protection coordination.</p>
+      </article>
+      <article class="cap reveal">
+        <span class="cap__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="9" y="9" width="30" height="30" rx="3" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18" r="2.5" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="30" r="2.5" stroke="currentColor" stroke-width="2"/><path d="M18 20.5V30h9.5M30 27.5V18h-9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 24h-3M42 24h-3M24 9v-3M24 42v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <h3>PCB &amp; hardware design</h3>
+        <p>Multi-layer power and control PCBs in Altium &amp; KiCad — schematic, layout, bring-up and validation in-house.</p>
+      </article>
+      <article class="cap reveal">
+        <span class="cap__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 6v8M24 34v8M6 24h8M34 24h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="11" stroke="currentColor" stroke-width="2"/><path d="M19 24l4 4 7-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>Power engineering &amp; test</h3>
+        <p>Grid synchronisation, anti-islanding, PV-simulator MPPT validation and thermal characterisation to standard.</p>
+      </article>
+      <article class="cap reveal">
+        <span class="cap__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M10 14h28v20H10z" stroke="currentColor" stroke-width="2"/><path d="M10 22h6l3-5 4 12 3-7h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>Embedded firmware</h3>
+        <p>Real-time control on STM32 / C2000 DSP — PLL/SOGI, dq vector control, Modbus, MQTT and IoT telemetry.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PLATFORM ===== -->
+<section class="section section--alt" id="platform">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">The strategic idea</span>
+      <h2>The product is the prototype.<br><span class="muted">The platform is the asset.</span></h2>
+      <p class="section__intro">
+        We have developed an indigenous power conversion "India stack" — a reusable control architecture
+        for all power electronics: DC–DC, AC–DC and DC–AC conversion. Roughly <strong>70–80% of the value</strong>
+        in a power converter lives in the firmware, not the commoditised power stage. We invested our scarce
+        engineering capacity in exactly that layer — and made it portable across product classes.
+      </p>
+    </div>
+
+    <div class="pillars">
+      <article class="pillar reveal">
+        <span class="pillar__no">01</span>
+        <h3>IP lives in the control stack</h3>
+        <p>Grid synchronisation, current control, protection and application logic — the defensible value sits in firmware that runs on MCU / DSP / DSC-class devices. We own it, end to end.</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="pillar__no">02</span>
+        <h3>India's transition needs breadth</h3>
+        <p>Solar inverters at every scale, BESS, EV fast charging, microgrids, solid-state transformers. One platform re-targets across all of them — instead of building a separate product for each.</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="pillar__no">03</span>
+        <h3>A platform deepens with use</h3>
+        <p>Every product built on the stack stress-tests its control architecture under new conditions. Each cycle hardens the platform further — compounding that single-product strategies can never achieve.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ARCHITECTURE ===== -->
+<section class="section" id="architecture">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">The seven-layer architecture</span>
+      <h2>Seven layers. Five travel across products. Two don't.</h2>
+      <p class="section__intro">
+        The reusable layers are the firmware — high-value indigenous IP. The non-reusable layers are the
+        hardware — re-engineered per power rating. Hover a layer to see where the value lives.
+      </p>
+    </div>
+
+    <div class="stack reveal">
+      <div class="stack__layer is-ip" data-travels="Fully portable">
+        <span class="stack__n">1</span>
+        <div class="stack__body"><strong>Application logic</strong><span>MPPT, anti-islanding, scheduling, comms, grid-code profiles</span></div>
+        <span class="stack__tag tag--ip">Indigenous IP</span>
+      </div>
+      <div class="stack__layer is-ip" data-travels="Same equations">
+        <span class="stack__n">2</span>
+        <div class="stack__body"><strong>Outer control loops</strong><span>DC-link voltage, P/Q references, droop, grid-forming logic</span></div>
+        <span class="stack__tag tag--ip">Indigenous IP</span>
+      </div>
+      <div class="stack__layer is-ip" data-travels="Coefficients retune">
+        <span class="stack__n">3</span>
+        <div class="stack__body"><strong>Inner current loop</strong><span>PI / PR regulators, dq vector control, harmonic compensation</span></div>
+        <span class="stack__tag tag--ip">Indigenous IP</span>
+      </div>
+      <div class="stack__layer is-ip" data-travels="Structure preserved">
+        <span class="stack__n">4</span>
+        <div class="stack__body"><strong>PWM + protection</strong><span>SVPWM, dead-time, over-current trip, fault state machine</span></div>
+        <span class="stack__tag tag--ip">Indigenous IP</span>
+      </div>
+      <div class="stack__layer is-ip" data-travels="Algorithm family preserved">
+        <span class="stack__n">5</span>
+        <div class="stack__body"><strong>Grid synchronisation</strong><span>PLL / SOGI (1Φ), dq-PLL or DDSRF (3Φ)</span></div>
+        <span class="stack__tag tag--ip">Indigenous IP</span>
+      </div>
+      <div class="stack__layer is-hw" data-travels="Re-engineered per rating">
+        <span class="stack__n">6</span>
+        <div class="stack__body"><strong>Power stage</strong><span>Si MOSFET / IGBT / SiC, LCL filter, transformers</span></div>
+        <span class="stack__tag tag--hw">Commodity HW</span>
+      </div>
+      <div class="stack__layer is-hw" data-travels="Scales non-linearly">
+        <span class="stack__n">7</span>
+        <div class="stack__body"><strong>Thermal / mech / EMC</strong><span>Heat-sinking, enclosure, EMI filters, creepage</span></div>
+        <span class="stack__tag tag--hw">Application-specific</span>
+      </div>
+    </div>
+    <p class="stack__note reveal">Layers 1–5 constitute <strong>70–80% of development effort</strong> and almost all of the defensible IP. India must own this layer.</p>
+  </div>
+</section>
+
+<!-- ===== INSIDE THE LAB ===== -->
+<section class="section section--alt" id="lab">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">Inside the lab</span>
+      <h2>Real hardware. Built, soldered &amp; validated in-house.</h2>
+      <p class="section__intro">Every board below was designed, fabricated and tested by the Centre of Excellence — from the first hand-built inverter to integrated power stages, custom control cards and the instruments that prove them. Tap any image to enlarge.</p>
+    </div>
+
+    <div class="gallery">
+      <figure class="shot shot--lg reveal" data-full="assets/lab/powerboard-hero.jpg" data-cap="Integrated power board — 3 kW grid-tied inverter, with film capacitor bank and on-board sensing.">
+        <img src="assets/lab/powerboard-hero.jpg" alt="Integrated power board for 3 kW grid-tied inverter" loading="lazy" />
+        <figcaption><span>Integrated power board · 3 kW GTI</span></figcaption>
+      </figure>
+      <figure class="shot reveal" data-full="assets/lab/control-card.jpg" data-cap="Custom STM32 control card V2.0 — designed in-house, all control circuitry integrated as a riser on the power board.">
+        <img src="assets/lab/control-card.jpg" alt="Custom STM32 control card" loading="lazy" />
+        <figcaption><span>Custom STM32 control card</span></figcaption>
+      </figure>
+      <figure class="shot reveal" data-full="assets/lab/comms-board.jpg" data-cap="Communication &amp; display board — multi-layer PCB integrating Wi-Fi, LCD and STM32 with Modbus / MQTT telemetry.">
+        <img src="assets/lab/comms-board.jpg" alt="Communication and control PCB" loading="lazy" />
+        <figcaption><span>Communication &amp; display PCB</span></figcaption>
+      </figure>
+      <figure class="shot reveal" data-full="assets/lab/subsystems.jpg" data-cap="Annotated prototype — bidirectional SMPS, gate-driver stage and relay/protection board on a single power assembly.">
+        <img src="assets/lab/subsystems.jpg" alt="Annotated inverter subsystems: SMPS, gate driver, relay" loading="lazy" />
+        <figcaption><span>SMPS · gate driver · protection</span></figcaption>
+      </figure>
+      <figure class="shot reveal" data-full="assets/lab/power-stage.jpg" data-cap="Power stage mounted on a thermal baseplate — metal-plate heat path for IGBTs and inductors, learned from SiC failure analysis.">
+        <img src="assets/lab/power-stage.jpg" alt="Power stage on thermal baseplate" loading="lazy" />
+        <figcaption><span>Power stage · thermal baseplate</span></figcaption>
+      </figure>
+      <figure class="shot reveal" data-full="assets/lab/first-inverter.jpg" data-cap="The first hand-built inverter, July 2023 — 1–1.5 kW on a TI microcontroller, built five months after the lab became operational.">
+        <img src="assets/lab/first-inverter.jpg" alt="First hand-built inverter prototype" loading="lazy" />
+        <figcaption><span>First hand-built inverter · 2023</span></figcaption>
+      </figure>
+      <figure class="shot reveal" data-full="assets/lab/gridsync-scope.jpg" data-cap="Grid-synchronisation validation — inverter voltage phase-matched to the grid at 49.9 Hz, 247 V RMS on a Keysight oscilloscope.">
+        <img src="assets/lab/gridsync-scope.jpg" alt="Grid synchronisation oscilloscope capture" loading="lazy" />
+        <figcaption><span>Grid-sync validation · 49.9 Hz</span></figcaption>
+      </figure>
+      <figure class="shot reveal" data-full="assets/lab/mppt-sim.jpg" data-cap="MPPT validation on a PV array simulator — tracking the maximum power point across irradiance and temperature curves.">
+        <img src="assets/lab/mppt-sim.jpg" alt="MPPT validation on PV simulator" loading="lazy" />
+        <figcaption><span>MPPT validation · PV simulator</span></figcaption>
+      </figure>
+    </div>
+
+    <!-- Validation proof strip -->
+    <div class="proof reveal">
+      <div class="proof__item">
+        <img src="assets/lab/power-meter.jpg" alt="Power meter reading 0.993 power factor" loading="lazy" />
+        <div><strong>0.993 PF</strong><span>Measured on a 3-phase PWM power analyser</span></div>
+      </div>
+      <div class="proof__item">
+        <img src="assets/lab/hmi-display.jpg" alt="Inverter HMI display interface" loading="lazy" />
+        <div><strong>In-house HMI</strong><span>Display &amp; menu firmware written from scratch</span></div>
+      </div>
+      <div class="proof__item">
+        <img src="assets/lab/thermal.jpg" alt="IGBT thermal mounting closeup" loading="lazy" />
+        <div><strong>Thermal design</strong><span>Metal-plate IGBT mounting &amp; derating</span></div>
+      </div>
+    </div>
+
+    <!-- Manufacturing video slot -->
+    <div class="reel reveal">
+      <div class="reel__text">
+        <span class="kicker">From bench to build</span>
+        <h3>Manufacturing &amp; assembly</h3>
+        <p>Short films of board bring-up, assembly and on-bench testing in the Centre of Excellence. Drop your clips into <code>assets/video/</code> and they appear here.</p>
+      </div>
+      <div class="reel__player" id="reelPlayer">
+        <!-- Replace poster + add <video> source when a clip is available -->
+        <div class="reel__poster" style="background-image:url('assets/lab/subsystems.jpg')">
+          <button class="reel__play" aria-label="Play manufacturing video (add a clip to assets/video/)">
+            <svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+          </button>
+          <span class="reel__note">Manufacturing reel — video coming soon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section class="section" id="products">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">Products &amp; technology</span>
+      <h2>Designed, simulated, prototyped &amp; tested — entirely in-house.</h2>
+      <p class="section__intro">Every product below is a real instantiation of the platform. The 3&nbsp;kW inverter is product-ready today; the rest are climbing the power-class ladder on the same control core.</p>
+    </div>
+
+    <div class="products">
+      <!-- 3kW -->
+      <article class="product product--feature reveal">
+        <div class="product__status status--done">Completed &amp; Validated · Submitted for BIS</div>
+        <h3 class="product__title">3 kW Solar Grid-Tied Inverter</h3>
+        <p class="product__series">Swatantra Series · The first product</p>
+        <p class="product__desc">Our first fully indigenous grid-tied inverter — concept to validated, market-ready product. Single-phase, non-isolated topology, integrated MPPT (100–500&nbsp;V) and 0.99 power factor. Field-tested under real Indian grid conditions and submitted to BIS for type-testing under IS&nbsp;16221.</p>
+        <div class="spec-grid">
+          <div class="spec"><span>Rated power</span><strong>3000 VA (3 kW)</strong></div>
+          <div class="spec"><span>MPPT range</span><strong>100 V – 500 V</strong></div>
+          <div class="spec"><span>Power factor</span><strong>0.99 (adjustable)</strong></div>
+          <div class="spec"><span>Grid</span><strong>230 Vac · 50 Hz</strong></div>
+          <div class="spec"><span>Ingress</span><strong>IP65 · Class I</strong></div>
+          <div class="spec"><span>Operating temp</span><strong>−30 °C to +60 °C</strong></div>
+        </div>
+      </article>
+
+      <!-- 6kW -->
+      <article class="product reveal">
+        <div class="product__status status--dev">In Development · Prototype</div>
+        <h3 class="product__title">6 kW Grid-Tied Inverter</h3>
+        <p class="product__series">HERIC topology · Single-phase</p>
+        <p class="product__desc">Transformer-less HERIC architecture for very high efficiency and ultra-low leakage current, with a dual-phase interleaved boost DC stage (180° phase-shifted) to cut input ripple and inductor stress.</p>
+        <div class="spec-grid">
+          <div class="spec"><span>Rated power</span><strong>6 kW</strong></div>
+          <div class="spec"><span>Inverter</span><strong>HERIC · Transformer-less</strong></div>
+          <div class="spec"><span>DC stage</span><strong>Interleaved boost</strong></div>
+          <div class="spec"><span>Origin</span><strong>100% indigenous</strong></div>
+        </div>
+      </article>
+
+      <!-- 10kW -->
+      <article class="product reveal">
+        <div class="product__status status--plan">Design Phase · Next milestone</div>
+        <h3 class="product__title">10 kW Three-Phase Inverter</h3>
+        <p class="product__series">Commercial &amp; industrial scale</p>
+        <p class="product__desc">The next scaling milestone — full grid-tie synchronisation, anti-islanding and export limiting, on an advanced DSP control platform with real-time monitoring.</p>
+        <div class="spec-grid">
+          <div class="spec"><span>Output</span><strong>415 V · 3-phase</strong></div>
+          <div class="spec"><span>Rated power</span><strong>10 kW</strong></div>
+          <div class="spec"><span>Targets</span><strong>BIS 16221 · IEC 62109</strong></div>
+          <div class="spec"><span>Comms</span><strong>Modbus / RS485 / IoT</strong></div>
+        </div>
+      </article>
+
+      <!-- Solar pump -->
+      <article class="product reveal">
+        <div class="product__status status--dev">Active Development · Hardware prototype</div>
+        <h3 class="product__title">Solar Pump Controller</h3>
+        <p class="product__series">Battery-less VFD for PV pumping</p>
+        <p class="product__desc">A dedicated variable-frequency drive enabling direct PV-to-motor operation with no battery — real-time MPPT adjusts motor speed to available irradiance. Engineered for rugged rural deployment.</p>
+        <div class="spec-grid">
+          <div class="spec"><span>DC input</span><strong>150 V – 400 V PV</strong></div>
+          <div class="spec"><span>Motor</span><strong>3–7.5 HP PMSM</strong></div>
+          <div class="spec"><span>MPPT</span><strong>Perturb &amp; observe</strong></div>
+          <div class="spec"><span>Use</span><strong>Agri irrigation</strong></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROADMAP ===== -->
+<section class="section section--alt" id="roadmap">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">From zero to product-ready</span>
+      <h2>2022 → 2026: the development roadmap</h2>
+      <p class="section__intro">A phased model — from proof-of-concept to commercialisation — building capability and complexity progressively. The company became operational on 14 Feb 2023; the first hand-built inverter followed just five months later.</p>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline__item reveal">
+        <span class="timeline__date">Sep 2022</span>
+        <h3>R&amp;D laboratory established</h3>
+        <p>Lab founded at Ornate Solar; the research team assembles and DSIR recognition begins.</p>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__date">Jul 2023</span>
+        <h3>First inverter — hand-built</h3>
+        <p>1–1.5 kW inverter built from scratch on a TI microcontroller. Grid-sync written from zero knowledge.</p>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__date">2023</span>
+        <h3>DSIR recognition</h3>
+        <p>Lab recognised by the Department of Scientific &amp; Industrial Research, Ministry of Science &amp; Technology.</p>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__date">Summer 2024</span>
+        <h3>8 kW GTI tested at IIT Delhi</h3>
+        <p>First large-scale prototype — pumped 1.5 kW into the real Delhi grid (not a simulator). Key thermal &amp; control-loop insights gained.</p>
+      </li>
+      <li class="timeline__item reveal is-done">
+        <span class="timeline__date">Feb 2025</span>
+        <h3>Compact 3 kW · TRL 7</h3>
+        <p>Smaller, smarter, fully-integrated product-ready GTI. Phase 1 complete — submitted for BIS certification.</p>
+      </li>
+      <li class="timeline__item reveal is-active">
+        <span class="timeline__date">2026 ›</span>
+        <h3>Scale &amp; commercialise</h3>
+        <p>6 kW &amp; solar pump controller in active development; 10 kW platform next. IP filing, MoUs and pilot deployments ahead.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== SCALE ===== -->
+<section class="section" id="scale">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">The scalability</span>
+      <h2>One control core. Five national-priority product classes.</h2>
+      <p class="section__intro">Each is a distinct national-priority application. Each requires application-specific engineering on top of the shared control core — but the defensible IP is already built.</p>
+    </div>
+
+    <div class="classes">
+      <article class="class reveal">
+        <h3>Solar inverters</h3>
+        <p>Residential to utility scale. The first product anchors residential; the same control core extends through C&amp;I and large string with engineering uplift.</p>
+        <span class="class__rel">500 GW non-fossil target by 2030</span>
+      </article>
+      <article class="class reveal">
+        <h3>BESS power conversion</h3>
+        <p>Bi-directional inverter-class equipment — the same control core extended with battery interface and SoC-aware logic.</p>
+        <span class="class__rel">41.65 GW / 208 GWh by 2030</span>
+      </article>
+      <article class="class reveal">
+        <h3>EV DC fast charging</h3>
+        <p>The front-end AC/DC stage is structurally identical to a bi-directional inverter — PLL, dq control and grid sync all reused.</p>
+        <span class="class__rel">PM E-DRIVE · 72,300 stations</span>
+      </article>
+      <article class="class reveal">
+        <h3>Microgrid &amp; hybrid</h3>
+        <p>Solar inverters with grid-forming control, battery interface and seamless transfer between grid-tied and islanded operation.</p>
+        <span class="class__rel">Rural · defence · telecom · C&amp;I</span>
+      </article>
+      <article class="class reveal">
+        <h3>Solid-state transformers</h3>
+        <p>A power-electronics replacement for conventional transformers. Shares the bi-directional inverter core; an emerging category for grid modernisation.</p>
+        <span class="class__rel">Strategic grid-modernisation value</span>
+      </article>
+      <article class="class class--cta reveal">
+        <h3>Why a platform?</h3>
+        <p>Because India does not yet own the embedded control layer. Hardware is assembled domestically — the firmware inside is still imported. We are closing that gap.</p>
+        <a href="#contact" class="class__link">Read the national case →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LEADERSHIP ===== -->
+<section class="section section--alt" id="leadership">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">Leadership</span>
+      <h2>Led by world-class engineering.</h2>
+    </div>
+
+    <div class="leader reveal">
+      <div class="leader__portrait">
+        <img src="assets/team/bhattacharya.jpg" alt="Dr. Bidyut Kumar Bhattacharyya, Technical Director &amp; CTO" loading="lazy" />
+      </div>
+      <div class="leader__body">
+        <h3>Dr. Bidyut Kumar Bhattacharyya</h3>
+        <p class="leader__role">Technical Director &amp; CTO · Head of the Centre of Excellence</p>
+        <p class="leader__bio">
+          An <strong>IEEE Fellow</strong> with over 25 years of research experience, Dr. Bhattacharyya spent
+          27 years at <strong>Intel</strong> as a Principal Engineer — a key contributor to the 80386 and 80486
+          processors and a recipient of the <strong>Intel Founder's Award</strong>. Recognised at Intel by
+          Craig Barrett, Pat Gelsinger and Chuck Steidel for his work on electrical characterisation of
+          packages and pioneering iPest technology. He holds a Ph.D. from the State University of New York and
+          an M.Sc. in Physics from IIT-Kanpur, and established Ornate Solar's R&amp;D unit to advance India's
+          National Semiconductor Mission.
+        </p>
+        <ul class="leader__creds">
+          <li><strong>IEEE</strong> Fellow</li>
+          <li><strong>30+</strong> patents</li>
+          <li><strong>27 yrs</strong> at Intel</li>
+          <li><strong>Ph.D.</strong> SUNY · IIT-K</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Patents -->
+    <div class="patents">
+      <div class="patents__head reveal">
+        <span class="kicker">Selected patents</span>
+        <h3><span class="stat__num" data-count="30">30</span>+ granted US patents in IC packaging &amp; power delivery</h3>
+        <p>A selection of Dr. Bhattacharyya's United States patents from his work on microprocessor packaging, power delivery and decoupling at Intel — the deep semiconductor foundation he now brings to indigenous power electronics.</p>
+      </div>
+      <div class="patents__grid">
+        <a class="patent reveal" href="https://patents.google.com/patent/US6888235" target="_blank" rel="noopener">
+          <span class="patent__no">US 6,888,235</span>
+          <span class="patent__title">Power delivery system for integrated circuits utilizing discrete capacitors</span>
+          <span class="patent__meta">2005 · Intel <span class="patent__arrow">↗</span></span>
+        </a>
+        <a class="patent reveal" href="https://patents.google.com/patent/US6936917" target="_blank" rel="noopener">
+          <span class="patent__no">US 6,936,917</span>
+          <span class="patent__title">Power delivery connector for integrated circuits utilizing integrated capacitors</span>
+          <span class="patent__meta">2005 · Intel <span class="patent__arrow">↗</span></span>
+        </a>
+        <a class="patent reveal" href="https://patents.google.com/patent/US6853559" target="_blank" rel="noopener">
+          <span class="patent__no">US 6,853,559</span>
+          <span class="patent__title">Thermal management of power delivery systems for integrated circuits</span>
+          <span class="patent__meta">2005 · Intel <span class="patent__arrow">↗</span></span>
+        </a>
+        <a class="patent reveal" href="https://patents.google.com/patent/US7355836" target="_blank" rel="noopener">
+          <span class="patent__no">US 7,355,836</span>
+          <span class="patent__title">Array capacitor for decoupling multiple voltage rails</span>
+          <span class="patent__meta">2008 · Intel <span class="patent__arrow">↗</span></span>
+        </a>
+        <a class="patent reveal" href="https://patents.google.com/patent/US7968929" target="_blank" rel="noopener">
+          <span class="patent__no">US 7,968,929</span>
+          <span class="patent__title">On-chip decoupling capacitor structures</span>
+          <span class="patent__meta">2011 · Intel <span class="patent__arrow">↗</span></span>
+        </a>
+        <a class="patent reveal" href="https://patents.google.com/patent/US6496383" target="_blank" rel="noopener">
+          <span class="patent__no">US 6,496,383</span>
+          <span class="patent__title">Integrated circuit carrier arrangement for reducing non-uniformity in current flow through power pins</span>
+          <span class="patent__meta">2002 · Intel <span class="patent__arrow">↗</span></span>
+        </a>
+        <a class="patent reveal" href="https://patents.google.com/patent/US6885563" target="_blank" rel="noopener">
+          <span class="patent__no">US 6,885,563</span>
+          <span class="patent__title">Power delivery and other systems for integrated circuits</span>
+          <span class="patent__meta">2005 · Intel <span class="patent__arrow">↗</span></span>
+        </a>
+        <a class="patent reveal" href="https://patents.google.com/patent/US7087991" target="_blank" rel="noopener">
+          <span class="patent__no">US 7,087,991</span>
+          <span class="patent__title">Integrated circuit package and method of manufacture</span>
+          <span class="patent__meta">2006 · Intel <span class="patent__arrow">↗</span></span>
+        </a>
+        <a class="patent reveal" href="https://patents.google.com/patent/US5949651" target="_blank" rel="noopener">
+          <span class="patent__no">US 5,949,651</span>
+          <span class="patent__title">Quad flat pack integrated circuit package</span>
+          <span class="patent__meta">1999 · Intel <span class="patent__arrow">↗</span></span>
+        </a>
+        <a class="patent reveal" href="https://patents.google.com/patent/US5175397" target="_blank" rel="noopener">
+          <span class="patent__no">US 5,175,397</span>
+          <span class="patent__title">Integrated circuit chip package</span>
+          <span class="patent__meta">1992 · Intel <span class="patent__arrow">↗</span></span>
+        </a>
+      </div>
+      <a class="patents__all reveal" href="https://patents.justia.com/inventor/bidyut-k-bhattacharyya" target="_blank" rel="noopener">View the full patent record on Justia ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">The team</span>
+      <h2>The engineers behind the stack.</h2>
+      <p class="section__intro">A deep bench of power-electronics researchers, embedded engineers, designers and test specialists — including three PhDs and a PhD candidate from IIT Delhi, IIT Bombay, DTU and Thapar.</p>
+    </div>
+
+    <div class="team">
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/arghyadip.jpg" alt="Dr. Arghyadip Bhattacharya" loading="lazy" /></div>
+        <figcaption><strong>Dr. Arghyadip Bhattacharya</strong><span>Head of Engineering · Power Electronics</span><em>Ph.D., IIT Bombay · Microinverter topologies</em></figcaption>
+      </figure>
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/ritika.jpg" alt="Dr. Ritika Agarwal" loading="lazy" /></div>
+        <figcaption><strong>Dr. Ritika Agarwal</strong><span>Senior Engineer · EE Wing</span><em>Ph.D. Power Electronics, Thapar · 3 &amp; 6 kW inverters</em></figcaption>
+      </figure>
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/kanchan.jpg" alt="Dr. Kanchan Bala Rai" loading="lazy" /></div>
+        <figcaption><strong>Dr. Kanchan Bala Rai</strong><span>Senior Engineer · Power &amp; Electronics</span><em>Ph.D. EE, DTU · Control logic &amp; embedded</em></figcaption>
+      </figure>
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/akankshi.jpg" alt="Akankshi Trivedi" loading="lazy" /></div>
+        <figcaption><strong>Akankshi Trivedi</strong><span>Power Electronics R&amp;D Engineer</span><em>Ph.D. candidate, IIT Delhi · DQ cascade control</em></figcaption>
+      </figure>
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/arindam.jpg" alt="Arindam Debnath" loading="lazy" /></div>
+        <figcaption><strong>Arindam Debnath</strong><span>Embedded Software Engineer</span><em>SOGI sync · MPPT · PR control · BIS firmware</em></figcaption>
+      </figure>
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/krishna.jpg" alt="Krishna Gullapalli" loading="lazy" /></div>
+        <figcaption><strong>Krishna Gullapalli</strong><span>Embedded Systems Developer</span><em>STM32 / ESP32 · Modbus · comms boards</em></figcaption>
+      </figure>
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/gaurav.jpg" alt="Gaurav Kumar" loading="lazy" /></div>
+        <figcaption><strong>Gaurav Kumar</strong><span>Embedded Developer</span><em>DQ control GTI firmware · STM32</em></figcaption>
+      </figure>
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/aditya.jpg" alt="Aditya Kumar Agarhari" loading="lazy" /></div>
+        <figcaption><strong>Aditya Kumar Agarhari</strong><span>Graduate Engineer · EEE</span><em>PCB design · BOM · motor-driver circuits</em></figcaption>
+      </figure>
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/kashyap.jpg" alt="Kashyap Masiwal" loading="lazy" /></div>
+        <figcaption><strong>Kashyap Masiwal</strong><span>Industrial Designer · Project Lead</span><em>M.Des, SPA Delhi · enclosures &amp; CMF</em></figcaption>
+      </figure>
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/akash.jpg" alt="Akash Yadav" loading="lazy" /></div>
+        <figcaption><strong>Akash Yadav</strong><span>Electrical Engineer</span><em>Power systems · solar conversion</em></figcaption>
+      </figure>
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/pravesh.jpg" alt="Pravesh Kumar" loading="lazy" /></div>
+        <figcaption><strong>Pravesh Kumar</strong><span>Inverter Testing Engineer</span><em>Circuit test · sensor calibration · assembly</em></figcaption>
+      </figure>
+      <figure class="member reveal">
+        <div class="member__photo"><img src="assets/team/tamanna.jpg" alt="Tamnna Ameri" loading="lazy" /></div>
+        <figcaption><strong>Tamnna Ameri</strong><span>Firmware Developer</span><em>Embedded C · STM32 · peripheral interfacing</em></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT / CTA ===== -->
+<section class="cta" id="contact">
+  <div class="container cta__inner">
+    <div class="cta__glow" aria-hidden="true"></div>
+    <span class="kicker">The platform is built. The opportunity is national.</span>
+    <h2>Ready for institutional evaluation &amp; partnership.</h2>
+    <p>We work with universities, government bodies and industry to co-develop standards, file patents, and bring indigenous power electronics to real-world deployment. We are not a competitor to inverter manufacturers — we are a strategic partner helping them succeed with solutions tailored to Indian infrastructure.</p>
+    <div class="cta__actions">
+      <a href="mailto:rnd@ornatesolar.com" class="btn btn--primary">rnd@ornatesolar.com</a>
+      <a href="https://ornatesolar.com/research-and-development" target="_blank" rel="noopener" class="btn btn--ghost">Visit Ornate Solar R&amp;D ↗</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lightbox__nav lightbox__prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <figure class="lightbox__figure">
+    <img id="lbImg" src="" alt="" />
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="Next">&#8250;</button>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <strong>Centre of Excellence</strong>
+      <span>Power Electronics &amp; Clean Energy Systems</span>
+      <span class="footer__addr">Ornate Solar · A-87, Pocket D, Okhla Phase II, New Delhi 110020 · Made in India 🇮🇳</span>
+    </div>
+    <div class="footer__cols">
+      <div><span class="footer__h">Platform</span><a href="#platform">The stack</a><a href="#architecture">Architecture</a><a href="#scale">Scalability</a></div>
+      <div><span class="footer__h">Products</span><a href="#products">3 kW Swatantra</a><a href="#products">6 &amp; 10 kW</a><a href="#products">Solar pump</a></div>
+      <div><span class="footer__h">About</span><a href="#leadership">Leadership</a><a href="#team">Team</a><a href="#roadmap">Roadmap</a></div>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <span>© <span id="year">2026</span> Ornate Solar · Centre of Excellence for Power Electronics &amp; Clean Energy Systems.</span>
+    <span>Indigenous Design · Innovation · Excellence</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
