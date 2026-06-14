@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Bidyut K. Bhattacharyya Centre of Excellence — Power Electronics &amp; Control Engineering | Ornate Solar</title>
-<meta name="description" content="The Bidyut K. Bhattacharyya Centre of Excellence at Ornate Agencies Pvt. Ltd. is a DSIR-recognized R&D centre dedicated to researching and developing digitally controlled high-power electronics for residential, industrial and military applications." />
+<title>Newsletter — Bidyut K. Bhattacharyya Centre of Excellence | Ornate Solar</title>
+<meta name="description" content="Ornate Solar publishes quarterly newsletters with details on research, recent news and events. Subscribe to join the mailing list." />
 <link rel="icon" type="image/jpeg" href="assets/identity/coe-seal.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,12 +32,12 @@
       </span>
     </a>
     <nav class="nav" id="nav" aria-label="Primary">
-      <a href="index.html" class="is-active">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="facilities.html">Facilities</a>
       <a href="research.html">Research</a>
       <a href="people.html">People</a>
-      <a href="newsletter.html">Newsletter</a>
+      <a href="newsletter.html" class="is-active">Newsletter</a>
       <a href="news.html">News</a>
     </nav>
     <button class="navtoggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -48,30 +48,33 @@
 
 <main>
 
-<!-- ===== Charter ===== -->
-<section class="charter">
-  <div class="charter__grid" aria-hidden="true"></div>
-  <div class="container charter__inner">
-    <img class="charter__seal reveal is-visible" src="assets/identity/coe-seal.jpg" alt="" />
-    <h1 class="charter__title reveal is-visible d-1">
-      Bidyut K. Bhattacharyya<br /><em>Centre of Excellence</em>
-    </h1>
-    <div class="charter__rule reveal is-visible d-2" aria-hidden="true"><span></span></div>
-    <p class="charter__text reveal is-visible d-2">
-      The <strong>Bidyut K. Bhattacharyya Centre of Excellence</strong> at Ornate Agencies
-      Pvt.&nbsp;Ltd. is dedicated to researching and developing technology modules in Power
-      Electronics, for both hardware and software &mdash; which in turn will be utilised as
-      cutting-edge, digitally controlled high-power products for residential, industrial
-      and military applications.
+<!-- ===== Page head ===== -->
+<section class="pagehead">
+  <div class="container">
+    <h1 class="reveal">Newsletter</h1>
+    <p class="pagehead__lede reveal d-1">
+      Ornate Solar publishes quarterly newsletters that provide details on research,
+      recent news and events.
     </p>
   </div>
 </section>
 
-<!-- ===== System modules banner ===== -->
-<section class="banner">
-  <div class="banner__media">
-    <img src="assets/lab/system-modules.jpg"
-         alt="System integrated modules of the Ornate power platform — power electronics board, control and user interface module, and microcontroller and communication system on the lab bench" />
+<!-- ===== Subscribe ===== -->
+<section class="newsletter" id="newsletter">
+  <div class="container newsletter__inner">
+    <div class="newsletter__copy reveal">
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__rule"></span>Quarterly</p>
+      <h2>Join the mailing list</h2>
+      <p>
+        To be part of the emailing list, please subscribe below.
+      </p>
+    </div>
+    <form class="newsletter__form reveal d-1" id="newsletterForm" novalidate>
+      <label class="visually-hidden" for="nlEmail">Email address</label>
+      <input id="nlEmail" type="email" name="email" placeholder="you@institution.edu" required />
+      <button class="btn btn--gold" type="submit">Subscribe</button>
+      <p class="newsletter__note" id="nlNote" role="status"></p>
+    </form>
   </div>
 </section>
 
