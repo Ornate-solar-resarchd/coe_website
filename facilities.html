@@ -59,73 +59,105 @@
 </section>
 
 <!-- ===== Equipment & capabilities ===== -->
-<section class="domains">
+<section class="equipment">
   <div class="container">
     <div class="domains__head reveal">
       <p class="eyebrow"><span class="eyebrow__rule"></span>Equipment &amp; Capabilities</p>
       <h2>Measurement and test infrastructure</h2>
+      <p class="domains__lede">The instruments we use to design, characterise and validate power-electronics hardware in-house.</p>
     </div>
-    <div class="domains__grid">
-      <article class="domain reveal"><span class="domain__num">01</span>
-        <h3>L &amp; C Measurement</h3>
-        <p>Precision inductance and capacitance measurement for magnetics and passive-component characterization.</p>
-      </article>
-      <article class="domain reveal d-1"><span class="domain__num">02</span>
-        <h3>Oscilloscopes &amp; 10&nbsp;MHz Probes We Build</h3>
-        <p>A fleet of oscilloscopes, together with 10&nbsp;MHz probes designed and built in-house.</p>
-      </article>
-      <article class="domain reveal d-2"><span class="domain__num">03</span>
-        <h3>Differential Probes</h3>
-        <p>Differential probes for safe, accurate measurement of floating and high-voltage nodes.</p>
-      </article>
-      <article class="domain reveal d-3"><span class="domain__num">04</span>
-        <h3>Heat Plates</h3>
-        <p>Many heat plates for thermal stress, soak and elevated-temperature testing of boards and components.</p>
-      </article>
-      <article class="domain reveal d-4"><span class="domain__num">05</span>
-        <h3>Humidity Chambers</h3>
-        <p>Humidity chambers for environmental conditioning and reliability testing.</p>
-      </article>
-      <article class="domain reveal d-5"><span class="domain__num">06</span>
-        <h3>Real Solar Panels &amp; PV Emulators</h3>
-        <p>Testing with real solar panels alongside PV emulators for repeatable, programmable source conditions.</p>
-      </article>
-      <article class="domain reveal d-5"><span class="domain__num">07</span>
-        <h3>Signal Generation</h3>
-        <p>Signal generators of any kind, realised using the scope-based instrumentation in the lab.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <div class="equip__grid">
 
-<!-- ===== In the lab ===== -->
-<section class="lab">
-  <div class="container">
-    <div class="lab__head reveal">
-      <p class="eyebrow eyebrow--light"><span class="eyebrow__rule"></span>In the Lab</p>
-      <h2>On the bench</h2>
-    </div>
-    <div class="lab__grid">
-      <figure class="lab__item lab__item--tall reveal">
-        <img src="assets/lab/subsystems.jpg" alt="Power-electronics subsystems under test on the lab bench" loading="lazy" />
-        <figcaption>Subsystems under test</figcaption>
-      </figure>
-      <figure class="lab__item reveal d-1">
-        <img src="assets/lab/power-meter.jpg" alt="Precision power meter measurement" loading="lazy" />
-        <figcaption>Precision power measurement</figcaption>
-      </figure>
-      <figure class="lab__item reveal d-2">
-        <img src="assets/lab/gridsync-scope.jpg" alt="Oscilloscope capture of grid-synchronization waveforms" loading="lazy" />
-        <figcaption>Scope capture &middot; grid sync</figcaption>
-      </figure>
-      <figure class="lab__item reveal d-3">
-        <img src="assets/lab/thermal.jpg" alt="Thermal characterization with heat plates" loading="lazy" />
-        <figcaption>Thermal characterization</figcaption>
-      </figure>
-      <figure class="lab__item reveal d-4">
-        <img src="assets/lab/mppt-sim.jpg" alt="MPPT validation against PV emulators" loading="lazy" />
-        <figcaption>PV emulator testing</figcaption>
-      </figure>
+      <article class="equip reveal">
+        <div class="equip__media"><img src="assets/lab/diff-probe.jpg" alt="Keysight N2790A 100 MHz high-voltage differential probe" loading="lazy" /></div>
+        <div class="equip__body">
+          <p class="equip__tag">Differential Probe</p>
+          <h3>Keysight N2790A</h3>
+          <p>100&nbsp;MHz high-voltage differential probe (up to 1400&nbsp;V) for safe measurement of floating and high-voltage nodes.</p>
+        </div>
+      </article>
+
+      <article class="equip reveal d-1">
+        <div class="equip__media"><img src="assets/lab/oscilloscope-dsox.jpg" alt="Keysight InfiniiVision DSOX3014G oscilloscope" loading="lazy" /></div>
+        <div class="equip__body">
+          <p class="equip__tag">Oscilloscope</p>
+          <h3>Keysight InfiniiVision DSOX3014G</h3>
+          <p>100&nbsp;MHz, 4-channel digital storage oscilloscope — waveform capture for switching and control debug.</p>
+        </div>
+      </article>
+
+      <article class="equip reveal d-2">
+        <div class="equip__media"><img src="assets/lab/current-probe.jpg" alt="Keysight 1146B AC/DC current probe" loading="lazy" /></div>
+        <div class="equip__body">
+          <p class="equip__tag">Current Probe</p>
+          <h3>Keysight 1146B</h3>
+          <p>AC/DC clamp current probe, 100&nbsp;kHz / 100&nbsp;A — non-intrusive current measurement on the oscilloscope.</p>
+        </div>
+      </article>
+
+      <article class="equip reveal">
+        <div class="equip__media"><img src="assets/lab/dc-supply-powertron.jpg" alt="Powertron DC regulated power supply" loading="lazy" /></div>
+        <div class="equip__body">
+          <p class="equip__tag">DC Power Supply</p>
+          <h3>Powertron DC Regulated Supply</h3>
+          <p>Regulated CV/CC DC bench supply for powering and characterising devices under test.</p>
+        </div>
+      </article>
+
+      <article class="equip reveal d-2">
+        <div class="equip__media equip__media--photo"><img src="assets/lab/env-chamber.jpg" alt="Environmental temperature and humidity test chamber" loading="lazy" /></div>
+        <div class="equip__body">
+          <p class="equip__tag">Environmental Chamber</p>
+          <h3>Temperature &amp; Humidity Chamber</h3>
+          <p>Programmable chamber for temperature and humidity conditioning and reliability testing of assemblies.</p>
+        </div>
+      </article>
+
+      <article class="equip reveal">
+        <div class="equip__media"><img src="assets/lab/soldering-bakon.jpg" alt="Bakon 60 W digital soldering station" loading="lazy" /></div>
+        <div class="equip__body">
+          <p class="equip__tag">Soldering</p>
+          <h3>Bakon 60&nbsp;W Soldering Station</h3>
+          <p>Temperature-controlled digital soldering station for precision assembly of power and control PCBs.</p>
+        </div>
+      </article>
+
+      <article class="equip reveal d-1">
+        <div class="equip__media"><img src="assets/lab/soldering-sugon.jpg" alt="Sugon soldering station" loading="lazy" /></div>
+        <div class="equip__body">
+          <p class="equip__tag">Soldering / Rework</p>
+          <h3>Sugon Soldering Station</h3>
+          <p>Fast-heating soldering station for fine-pitch assembly and component-level rework.</p>
+        </div>
+      </article>
+
+      <article class="equip reveal d-2">
+        <div class="equip__media"><img src="assets/lab/power-analyzer.jpg" alt="Everfine PF9833 three-phase PWM digital power meter" loading="lazy" /></div>
+        <div class="equip__body">
+          <p class="equip__tag">Power Analyzer</p>
+          <h3>Everfine PF9833</h3>
+          <p>Three-phase PWM digital power meter for efficiency, harmonic and power-quality measurement on inverters.</p>
+        </div>
+      </article>
+
+      <article class="equip reveal">
+        <div class="equip__media"><img src="assets/lab/itech-pv.jpg" alt="ITECH IT6000C PV simulator and bidirectional DC power supply, 18 kVA" loading="lazy" /></div>
+        <div class="equip__body">
+          <p class="equip__tag">PV Simulator · 18&nbsp;kVA</p>
+          <h3>ITECH IT6000C &mdash; 18&nbsp;kVA</h3>
+          <p>Bidirectional regenerative DC supply with solar I–V curve simulation (EN50530) for high-power PV-inverter MPPT testing.</p>
+        </div>
+      </article>
+
+      <article class="equip reveal d-1">
+        <div class="equip__media"><img src="assets/lab/itech-pv.jpg" alt="ITECH IT6000C PV simulator and bidirectional DC power supply, 6 kVA" loading="lazy" /></div>
+        <div class="equip__body">
+          <p class="equip__tag">PV Simulator · 6&nbsp;kVA</p>
+          <h3>ITECH IT6000C &mdash; 6&nbsp;kVA</h3>
+          <p>Compact bidirectional PV-array simulator for programmable solar source conditions and string-inverter validation.</p>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
