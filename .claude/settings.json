@@ -41,7 +41,20 @@
       "Bash(sips -g pixelWidth -g pixelHeight assets/lab/system-modules.jpg)",
       "Bash(sips -Z 2400 -s format jpeg -s formatOptions 86 ~/Downloads/Gemini_Generated_Image_hjozmxhjozmxhjoz.png --out assets/lab/system-modules.jpg)",
       "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=/tmp/v_home3.png --window-size=1440,1900 --hide-scrollbars --virtual-time-budget=8000 http://localhost:8741/)",
-      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=/tmp/v_home4.png --window-size=1440,2000 --hide-scrollbars --virtual-time-budget=8000 http://localhost:8741/)"
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=/tmp/v_home4.png --window-size=1440,2000 --hide-scrollbars --virtual-time-budget=8000 http://localhost:8741/)",
+      "Bash(git remote *)",
+      "Bash(sips -Z 2400 -s format jpeg -s formatOptions 88 ~/Downloads/Gemini_Generated_Image_k0xgt2k0xgt2k0xg.png --out assets/lab/system-detail.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight assets/lab/system-detail.jpg)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=/tmp/v_home5.png --window-size=1440,2600 --hide-scrollbars --virtual-time-budget=8000 http://localhost:8741/)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=/tmp/v_home6.png --window-size=1440,2100 --hide-scrollbars --virtual-time-budget=8000 http://localhost:8741/)",
+      "Bash(sips -Z 640 -s format jpeg -s formatOptions 85 ~/Downloads/kanchan.jpeg --out assets/people/kanchan.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight assets/people/kanchan.jpg)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=/tmp/v_people2.png --window-size=1280,3000 --hide-scrollbars --virtual-time-budget=8000 http://localhost:8741/people.html)",
+      "Bash(sips -g pixelWidth -g pixelHeight ~/Downloads/kanchan.jpeg)",
+      "Bash(cp /tmp/kanchan_try2.jpg kanchan.jpeg)",
+      "Bash(sips -g pixelWidth -g pixelHeight kanchan.jpeg)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=/tmp/v_people4.png --window-size=1280,3000 --hide-scrollbars --virtual-time-budget=8000 http://localhost:8741/people.html)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=/tmp/v_res2.png --window-size=1280,1400 --hide-scrollbars --virtual-time-budget=8000 http://localhost:8741/research.html)"
     ]
   }
 }
