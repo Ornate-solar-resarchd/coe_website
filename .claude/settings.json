@@ -135,7 +135,8 @@
       "Bash(curl -s \"https://coe-website-omega.vercel.app/assets/team/aditya-goel.jpg\" -o /tmp/live_ag.jpg)",
       "Bash(sips -g pixelWidth -g pixelHeight /tmp/live_ag.jpg)",
       "Bash(echo \"LIVE : $\\(sips -g pixelWidth -g pixelHeight /tmp/live_ag.jpg)",
-      "Bash(sips -Z 320 aditya-goel.jpg --out /tmp/ag_enh.jpg)"
+      "Bash(sips -Z 320 aditya-goel.jpg --out /tmp/ag_enh.jpg)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --user-data-dir=/tmp/cpR --screenshot=/tmp/rsec.png --window-size=1300,3200 --hide-scrollbars --virtual-time-budget=8000 \"http://localhost:8741/research.html?x=$\\(date +%s%N\\)\")"
     ]
   }
 }
