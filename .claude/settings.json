@@ -131,7 +131,11 @@
       "Bash(curl -s \"https://coe-website-omega.vercel.app/about.html?cb=$\\(date +%s%N\\)\")",
       "Bash(git add *)",
       "Bash(git commit -m 'update Aditya Goel photo *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(curl -s \"https://coe-website-omega.vercel.app/assets/team/aditya-goel.jpg\" -o /tmp/live_ag.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight /tmp/live_ag.jpg)",
+      "Bash(echo \"LIVE : $\\(sips -g pixelWidth -g pixelHeight /tmp/live_ag.jpg)",
+      "Bash(sips -Z 320 aditya-goel.jpg --out /tmp/ag_enh.jpg)"
     ]
   }
 }
