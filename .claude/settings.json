@@ -128,7 +128,10 @@
       "Bash(curl -s \"https://coe-website-omega.vercel.app/facilities.html\" -I)",
       "Bash(gh api *)",
       "Bash(curl -s \"https://coe-website-omega.vercel.app/facilities.html?cb=$\\(date +%s%N\\)\")",
-      "Bash(curl -s \"https://coe-website-omega.vercel.app/about.html?cb=$\\(date +%s%N\\)\")"
+      "Bash(curl -s \"https://coe-website-omega.vercel.app/about.html?cb=$\\(date +%s%N\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit -m 'update Aditya Goel photo *)",
+      "Bash(git push *)"
     ]
   }
 }
