@@ -118,7 +118,17 @@
       "Bash(sips -g pixelWidth -g pixelHeight jagdish-goel.jpg)",
       "Bash(sips -Z 240 jagdish-goel.jpg --out /tmp/jg.jpg)",
       "Bash(rm -rf /tmp/cpA2)",
-      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --user-data-dir=/tmp/cpA2 --screenshot=/tmp/about3.png --window-size=1300,2400 --hide-scrollbars --virtual-time-budget=8000 \"http://localhost:8741/about.html?x=$\\(date +%s%N\\)\")"
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --user-data-dir=/tmp/cpA2 --screenshot=/tmp/about3.png --window-size=1300,2400 --hide-scrollbars --virtual-time-budget=8000 \"http://localhost:8741/about.html?x=$\\(date +%s%N\\)\")",
+      "Bash(git fetch *)",
+      "Bash(gh repo *)",
+      "Bash(curl -s \"https://coe-website-omega.vercel.app/facilities.html\")",
+      "Bash(curl -s \"https://coe-website-omega.vercel.app/assets/lab/env-chamber.jpg\" -o /tmp/live_env.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight /tmp/live_env.jpg)",
+      "Bash(echo \"live: $\\(sips -g pixelWidth -g pixelHeight /tmp/live_env.jpg)",
+      "Bash(curl -s \"https://coe-website-omega.vercel.app/facilities.html\" -I)",
+      "Bash(gh api *)",
+      "Bash(curl -s \"https://coe-website-omega.vercel.app/facilities.html?cb=$\\(date +%s%N\\)\")",
+      "Bash(curl -s \"https://coe-website-omega.vercel.app/about.html?cb=$\\(date +%s%N\\)\")"
     ]
   }
 }
