@@ -113,7 +113,10 @@
       "Bash(rm -rf /tmp/cpS)",
       "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --user-data-dir=/tmp/cpS --screenshot=/tmp/seal2.png --window-size=1280,1000 --hide-scrollbars --virtual-time-budget=6000 \"http://localhost:8741/?s=$\\(date +%s%N\\)\")",
       "Bash(sips -g pixelWidth -g pixelHeight assets/identity/coe-seal.jpg)",
-      "Bash(sips -Z 300 assets/identity/coe-seal.jpg --out /tmp/curseal.jpg)"
+      "Bash(sips -Z 300 assets/identity/coe-seal.jpg --out /tmp/curseal.jpg)",
+      "Bash(curl -sf \"https://ornatesolar.com/wp-content/uploads/2020/08/Jagdish-Goel-1.jpeg\" -o jagdish-goel.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight jagdish-goel.jpg)",
+      "Bash(sips -Z 240 jagdish-goel.jpg --out /tmp/jg.jpg)"
     ]
   }
 }
