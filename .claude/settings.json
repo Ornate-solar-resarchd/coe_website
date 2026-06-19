@@ -136,7 +136,26 @@
       "Bash(sips -g pixelWidth -g pixelHeight /tmp/live_ag.jpg)",
       "Bash(echo \"LIVE : $\\(sips -g pixelWidth -g pixelHeight /tmp/live_ag.jpg)",
       "Bash(sips -Z 320 aditya-goel.jpg --out /tmp/ag_enh.jpg)",
-      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --user-data-dir=/tmp/cpR --screenshot=/tmp/rsec.png --window-size=1300,3200 --hide-scrollbars --virtual-time-budget=8000 \"http://localhost:8741/research.html?x=$\\(date +%s%N\\)\")"
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --user-data-dir=/tmp/cpR --screenshot=/tmp/rsec.png --window-size=1300,3200 --hide-scrollbars --virtual-time-budget=8000 \"http://localhost:8741/research.html?x=$\\(date +%s%N\\)\")",
+      "Bash(rm -rf /tmp/cpC)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --user-data-dir=/tmp/cpC --screenshot=/tmp/contact.png --window-size=1300,2100 --hide-scrollbars --virtual-time-budget=9000 \"http://localhost:8741/contact.html?x=$\\(date +%s%N\\)\")",
+      "Bash(python3)",
+      "Bash(rm -rf /tmp/cpF2)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --user-data-dir=/tmp/cpF2 --screenshot=/tmp/foot2.png --window-size=1300,1900 --hide-scrollbars --virtual-time-budget=7000 \"http://localhost:8741/index.html?x=$\\(date +%s%N\\)\")",
+      "Bash(curl -sL \"https://unityess.ai/\" -o /tmp/unityess.html)",
+      "Bash(find ~/Downloads ~/Desktop /tmp /var/folders -type f \\\\\\( -iname \"*.png\" -o -iname \"*.jpg\" -o -iname \"*.jpeg\" \\\\\\) -newermt \"2026-06-16\" 2>/dev/null | head -40; echo \"---clipboard temp---\"; ls -lat /private/var/folders/*/*/T/TemporaryItems 2>/dev/null | head)",
+      "Read(//Users/priyankrajput/Desktop/**)",
+      "Read(//private/var/folders/**)",
+      "Bash(cp \"/Users/priyankrajput/Downloads/give_me_more_cleaner_image_202606181447.jpeg\" \"/Users/priyankrajput/COE website/assets/lab/lab-board-glass.jpg\")",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/priyankrajput/COE website/assets/lab/lab-board-glass.jpg\")",
+      "Bash(cp ~/Downloads/\"Professional_top-down_view_of_this_202606181529 \\(1\\).jpeg\" assets/lab/board-bench.jpg)",
+      "Bash(cp ~/Downloads/\"Professional_top-down_view_of_this_202606181529.jpeg\" assets/lab/board-chassis-1.jpg)",
+      "Bash(cp ~/Downloads/\"Professional_top-down_view_of_this_202606181530.jpeg\" assets/lab/board-chassis-2.jpg)",
+      "Read(//Users/priyankrajput/**)",
+      "Bash(xargs '-I{}' sh -c 'd=$\\(sips -g pixelWidth -g pixelHeight \"{}\" 2>/dev/null | grep -c \"pixelWidth: 2752\"\\); [ \"$d\" -gt 0 ] && echo \"{}\"')",
+      "Bash(node --check server.js)",
+      "Bash(node --version)",
+      "Bash(git commit -q -m 'Add form backend \\(Mac mini + Cloudflare Tunnel\\), contact page, home board gallery *)"
     ]
   }
 }

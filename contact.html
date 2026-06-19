@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Bidyut K. Bhattacharyya Centre of Excellence — Power Electronics &amp; Control Engineering | Ornate Agencies Pvt. Ltd.</title>
-<meta name="description" content="The Bidyut K. Bhattacharyya Centre of Excellence at Ornate Agencies Pvt. Ltd. is a DSIR-recognized R&D centre dedicated to researching and developing digitally controlled high-power electronics for residential, industrial and military applications." />
+<title>Contact — Bidyut K. Bhattacharyya Centre of Excellence | Ornate Agencies Pvt. Ltd.</title>
+<meta name="description" content="Get in touch with the Bidyut K. Bhattacharyya Centre of Excellence at Ornate Agencies Pvt. Ltd. — A-87, Pocket D, Okhla Phase II, New Delhi 110020. Email info@ornatesolar.com for research, collaboration and internship enquiries." />
 <link rel="icon" type="image/jpeg" href="assets/identity/coe-seal.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,7 +38,7 @@
       <a href="people.html">People</a>
       <a href="newsletter.html">Newsletter</a>
       <a href="news.html">News</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="is-active">Contact</a>
     </nav>
     <button class="navtoggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -48,56 +48,71 @@
 
 <main>
 
-<!-- ===== Charter ===== -->
-<section class="charter">
-  <div class="charter__grid" aria-hidden="true"></div>
-  <div class="container charter__layout">
-    <div class="charter__inner">
-      <img class="charter__seal reveal is-visible" src="assets/identity/coe-seal.jpg" alt="" />
-      <h1 class="charter__title reveal is-visible d-1">
-        Bidyut K. Bhattacharyya<br /><em>Centre of Excellence</em>
-      </h1>
-      <div class="charter__rule reveal is-visible d-2" aria-hidden="true"><span></span></div>
-      <p class="charter__text reveal is-visible d-2">
-        The <strong>Bidyut K. Bhattacharyya Centre of Excellence</strong> at Ornate Agencies
-        Pvt.&nbsp;Ltd. is dedicated to research and develop technology modules in Power
-        Electronics, for both hardware and software &mdash; which in turn will be utilised as
-        cutting-edge, digitally controlled high-power products for residential, industrial
-        and military applications.
-      </p>
-    </div>
-
-    <figure class="charter__side reveal is-visible d-1">
-      <div class="charter__frame">
-        <img src="assets/lab/power-board-render.jpg"
-             alt="Ornate 3 kW power-electronics board — capacitor bank, planar magnetics and digital control stage" />
-      </div>
-    </figure>
+<!-- ===== Page head ===== -->
+<section class="pagehead">
+  <div class="container">
+    <h1 class="reveal">Contact</h1>
+    <p class="pagehead__lede reveal d-1">
+      For research, collaboration, internship and partnership enquiries &mdash; we&rsquo;d be glad to hear from you.
+    </p>
   </div>
 </section>
 
-<!-- ===== Hardware boards gallery (home) ===== -->
-<section class="boards">
-  <div class="container">
-    <header class="boards__head reveal">
-      <p class="boards__eyebrow">Engineered in-house</p>
-      <h2 class="boards__title">Digitally controlled power-electronics boards</h2>
-      <p class="boards__lede">
-        High-power converter platforms &mdash; designed, built and validated in-house at the
-        Centre of Excellence for residential, industrial and military applications.
-      </p>
-    </header>
-    <div class="boards__grid">
-      <figure class="board reveal">
-        <div class="board__frame">
-          <img src="assets/lab/board-1.jpg" alt="Ornate digitally controlled power-electronics board — capacitor bank, planar magnetics and control stage" loading="lazy" />
+<!-- ===== Contact ===== -->
+<section class="contact">
+  <div class="container contact__layout">
+
+    <!-- Info column -->
+    <div class="contact__info reveal">
+      <article class="contact__card">
+        <span class="contact__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 4.6 6.1 12.2 6.4 12.5a.8.8 0 0 0 1.2 0C13 21.2 19 13.6 19 9a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+        </span>
+        <div class="contact__body">
+          <p class="contact__label">Address</p>
+          <p class="contact__detail">
+            Ornate Agencies Pvt. Ltd.<br />
+            A-87, Pocket D, Okhla Phase II<br />
+            New Delhi 110020, India
+          </p>
         </div>
-      </figure>
-      <figure class="board reveal d-1">
-        <div class="board__frame">
-          <img src="assets/lab/board-2.jpg" alt="Chassis-mounted Ornate power-electronics assembly — DC bus capacitors and digital control stage" loading="lazy" />
+      </article>
+
+      <article class="contact__card">
+        <span class="contact__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7.2 8-5.2H4l8 5.2ZM4 8.4V17h16V8.4l-7.5 4.9a1 1 0 0 1-1 0L4 8.4Z"/></svg>
+        </span>
+        <div class="contact__body">
+          <p class="contact__label">Email</p>
+          <a class="contact__link" href="mailto:info@ornatesolar.com">info@ornatesolar.com</a>
         </div>
-      </figure>
+      </article>
+    </div>
+
+    <!-- Form column -->
+    <div class="contact__formwrap reveal d-1">
+      <h2 class="contact__formtitle">Send us a message</h2>
+      <form class="contact__form" id="contactForm" novalidate>
+        <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
+        <div class="field">
+          <label for="cName">Name</label>
+          <input id="cName" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="cEmail">Email</label>
+          <input id="cEmail" name="email" type="email" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label for="cSubject">Subject</label>
+          <input id="cSubject" name="subject" type="text" />
+        </div>
+        <div class="field">
+          <label for="cMessage">Message</label>
+          <textarea id="cMessage" name="message" rows="5" required></textarea>
+        </div>
+        <button class="btn btn--gold" type="submit">Send message</button>
+        <p class="contact__note" id="cNote" role="status"></p>
+      </form>
     </div>
   </div>
 </section>
@@ -126,7 +141,7 @@
       <a href="facilities.html">Facilities</a>
       <a href="research.html">Research</a>
       <a href="people.html">People</a>
-      <a href="news.html">News &amp; Archives</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <div class="footer__contact">
       <p>Ornate Agencies Pvt. Ltd.<br />A-87, Pocket D, Okhla Phase II,<br />New Delhi 110020</p>

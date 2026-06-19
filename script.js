@@ -32,19 +32,70 @@ const io = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
+// ===== Form backend =====
+// Public URL of the Mac mini backend, exposed via Cloudflare Tunnel.
+// Replace with your real subdomain once the tunnel is set up.
+const API_BASE = 'https://api.YOURDOMAIN.com';
+const isEmail = v => /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v);
+
+async function postJSON(endpoint, data) {
+  const res = await fetch(API_BASE + endpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  });
+  const out = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(out.error || 'Request failed');
+  return out;
+}
+
 // ===== Newsletter form =====
 const form = document.getElementById('newsletterForm');
 const note = document.getElementById('nlNote');
-form && form.addEventListener('submit', e => {
+form && form.addEventListener('submit', async e => {
   e.preventDefault();
   const email = form.email.value.trim();
-  if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+  if (!isEmail(email)) {
     note.textContent = 'Please enter a valid email address.';
     return;
   }
-  // Mailing-list backend not wired up yet — capture via mailto for now.
-  location.href = 'mailto:info@ornatesolar.com?subject=Newsletter%20subscription&body=' +
-    encodeURIComponent('Please add ' + email + ' to the quarterly newsletter mailing list.');
-  note.textContent = 'Opening your mail client to confirm the subscription…';
-  form.reset();
+  note.textContent = 'Subscribing…';
+  try {
+    await postJSON('/newsletter', { email, company: form.company?.value || '' });
+    note.textContent = 'Thanks — you’re on the list.';
+    form.reset();
+  } catch (err) {
+    // Backend unreachable: fall back to the visitor's mail client.
+    location.href = 'mailto:info@ornatesolar.com?subject=Newsletter%20subscription&body=' +
+      encodeURIComponent('Please add ' + email + ' to the quarterly newsletter mailing list.');
+    note.textContent = 'Opening your mail client to confirm the subscription…';
+  }
+});
+
+// ===== Contact form =====
+const contactForm = document.getElementById('contactForm');
+const cNote = document.getElementById('cNote');
+contactForm && contactForm.addEventListener('submit', async e => {
+  e.preventDefault();
+  const name = contactForm.name.value.trim();
+  const email = contactForm.email.value.trim();
+  const subject = contactForm.subject.value.trim() || 'Enquiry — Centre of Excellence';
+  const message = contactForm.message.value.trim();
+  if (!name || !message || !isEmail(email)) {
+    cNote.textContent = 'Please enter your name, a valid email, and a message.';
+    return;
+  }
+  cNote.textContent = 'Sending…';
+  try {
+    await postJSON('/contact', { name, email, subject, message, company: contactForm.company?.value || '' });
+    cNote.textContent = 'Thank you — your message has been sent.';
+    contactForm.reset();
+  } catch (err) {
+    // Backend unreachable: fall back to the visitor's mail client.
+    const body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
+    location.href = 'mailto:info@ornatesolar.com'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(body);
+    cNote.textContent = 'Opening your mail client to send the message…';
+  }
 });
