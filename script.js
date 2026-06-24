@@ -20,6 +20,27 @@ nav.addEventListener('click', e => {
   }
 });
 
+// ===== Nav dropdown (News → News & Archives / Newsletter) =====
+const navGroups = document.querySelectorAll('.nav__group');
+function closeNavGroups(except) {
+  navGroups.forEach(g => {
+    if (g === except) return;
+    g.classList.remove('is-open');
+    g.querySelector('.nav__trigger')?.setAttribute('aria-expanded', 'false');
+  });
+}
+navGroups.forEach(group => {
+  const trigger = group.querySelector('.nav__trigger');
+  trigger.addEventListener('click', e => {
+    e.stopPropagation();
+    const open = group.classList.toggle('is-open');
+    trigger.setAttribute('aria-expanded', open);
+    closeNavGroups(group);
+  });
+});
+document.addEventListener('click', () => closeNavGroups());
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNavGroups(); });
+
 // ===== Scroll-triggered reveals =====
 const io = new IntersectionObserver(entries => {
   for (const entry of entries) {
