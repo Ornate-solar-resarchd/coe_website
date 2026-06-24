@@ -188,7 +188,10 @@
       "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --hide-scrollbars --window-size=1380,500 --screenshot=/tmp/biglogo.png --user-data-dir=/tmp/cc-biglogo \"file://$\\(pwd\\)/about.html?v=$\\(date +%s\\)\")",
       "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --hide-scrollbars --window-size=1380,1400 --screenshot=/tmp/lightbar.png --user-data-dir=/tmp/cc-lightbar \"file://$\\(pwd\\)/about.html?v=$\\(date +%s\\)\")",
       "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --hide-scrollbars --window-size=1380,1600 --screenshot=/tmp/vm.png --user-data-dir=/tmp/cc-vm \"file://$\\(pwd\\)/about.html?v=$\\(date +%s\\)\")",
-      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --hide-scrollbars --window-size=1380,2000 --screenshot=/tmp/vm2.png --user-data-dir=/tmp/cc-vm2 \"file://$\\(pwd\\)/about.html?v=$\\(date +%s\\)\")"
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --hide-scrollbars --window-size=1380,2000 --screenshot=/tmp/vm2.png --user-data-dir=/tmp/cc-vm2 \"file://$\\(pwd\\)/about.html?v=$\\(date +%s\\)\")",
+      "Bash(cp ~/Downloads/make_this_picture_background_black_202606241426.jpeg assets/lab/board-1.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight assets/lab/board-1.jpg)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --hide-scrollbars --window-size=1380,1600 --screenshot=/tmp/boardnew.png --user-data-dir=/tmp/cc-boardnew \"file://$\\(pwd\\)/index.html?v=$\\(date +%s\\)\")"
     ]
   }
 }
