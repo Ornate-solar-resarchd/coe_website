@@ -56,7 +56,7 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 // ===== Form backend =====
 // Public URL of the Mac mini backend, exposed via Cloudflare Tunnel.
 // Replace with your real subdomain once the tunnel is set up.
-const API_BASE = 'https://api.YOURDOMAIN.com';
+const API_BASE = 'https://coe-api.unityess.cloud';
 const isEmail = v => /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v);
 
 async function postJSON(endpoint, data) {

@@ -191,7 +191,12 @@
       "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --hide-scrollbars --window-size=1380,2000 --screenshot=/tmp/vm2.png --user-data-dir=/tmp/cc-vm2 \"file://$\\(pwd\\)/about.html?v=$\\(date +%s\\)\")",
       "Bash(cp ~/Downloads/make_this_picture_background_black_202606241426.jpeg assets/lab/board-1.jpg)",
       "Bash(sips -g pixelWidth -g pixelHeight assets/lab/board-1.jpg)",
-      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --hide-scrollbars --window-size=1380,1600 --screenshot=/tmp/boardnew.png --user-data-dir=/tmp/cc-boardnew \"file://$\\(pwd\\)/index.html?v=$\\(date +%s\\)\")"
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --hide-scrollbars --window-size=1380,1600 --screenshot=/tmp/boardnew.png --user-data-dir=/tmp/cc-boardnew \"file://$\\(pwd\\)/index.html?v=$\\(date +%s\\)\")",
+      "Bash(chmod +x setup.sh)",
+      "Bash(dig +short NS ornatesolar.com)",
+      "Bash(dig +short bkb.ornatesolar.com)",
+      "Bash(dig +short CNAME bkb.ornatesolar.com)",
+      "Bash(curl -sI https://bkb.ornatesolar.com)"
     ]
   }
 }
