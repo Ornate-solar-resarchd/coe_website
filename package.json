@@ -1,0 +1,8 @@
+{
+  "name": "coe-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && cp -R *.html styles.css script.js assets dist/"
+  }
+}
